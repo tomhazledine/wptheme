@@ -1,5 +1,5 @@
-#ReadME for wptheme
+# ReadME for wptheme
 
-##About
+## About
 
 	Basic theme created as a test for WordPress.
