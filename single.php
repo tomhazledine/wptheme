@@ -4,7 +4,7 @@
 * Template Name: Custom Page Template
 
 */
-?>
+get_header(); ?>
 <html>
   <head>
     <meta charset="utf-8">

@@ -6,7 +6,7 @@ Version: 0.0.1
 Tags: WordPress
 */
 div#header {
-  background-image:url('bbg.jpg');
+  background-image:url('assets/bbg.jpg');
   no-repeat bottom center; }
 div#headerimg  {
   margin: 7px 9px 0;
