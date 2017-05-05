@@ -5,3 +5,61 @@ Description: Theme Template for WordPress
 Version: 0.0.1
 Tags: WordPress
 */
+div#header {
+  background-image:url('bbg.jpg');
+  no-repeat bottom center; }
+div#headerimg  {
+  margin: 7px 9px 0;
+  color:#ffffff;
+  font-family: "Arial", Times, serif;
+  font-size:1em;
+  overflow:hidden;
+  height: 300px;
+  width: 740px; }
+body {  }
+
+  #wrapper { display: block; border: 1px #a2a2a2 solid; width:100%; margin:0px auto; }
+  #header { border: 0px #a2a2a2 solid; }
+  #content { width: 100%; border: 0px #a2a2a2 solid; float: left; text-align: center;}
+  #sidebar { width: 23%; border: 1px #a2a2a2 solid; float: right; text-align: center;}
+  #delimiter { clear: both; text-align: center;}
+  #footer { border: 1px #dcdcdc solid; background-color:#DCDCDC; font-family: "Arial"; text-align: center;}
+  .title { font-size: 11pt; font-family: "Arial"; text-align: center;}
+
+
+  #main-nav   {
+      height: 50px; /* set to the height you want your menu to be */
+      margin: 0 0 10px; /* just to give some spacing */
+      background-color:#DCDCDC;
+      color:#000000;
+      font-family: "Arial", Times, serif;
+
+  }
+  #main-nav ul    {
+      margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+  }
+  #main-nav li    {
+      display: block;
+      float: left;
+      line-height: 50px; /* this should be the same as your #main-nav height */
+      height: 50px; /* this should be the same as your #main-nav height */
+      margin: 0; padding: 0; /* only needed if you don't have a reset */
+      position: relative; /* this is needed in order to position sub menus */
+  }
+  #main-nav li a  {
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 15px;
+  }
+  #main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
+      color: #000;
+      background: #117CC2;
+  }
+
+  #main-nav a {
+    text-decoration: none;
+  }
+  #main-nav a:visited {
+    text-decoration: none;
+  }
