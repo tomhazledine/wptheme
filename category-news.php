@@ -17,11 +17,11 @@ if ( have_posts() ) :
         while ( have_posts() ) : the_post();
     ?>
     <div class="post_item post_item_news">
-        <div id="posthead2">
+        <div class="posthead2">
             </br>
             <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
         </div>
-        <div id="posthead3">
+        <div class="posthead3">
             </br>
             <a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a>
             </br>
