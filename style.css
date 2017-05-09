@@ -26,8 +26,8 @@ body {  }
   #delimiter { clear: both; text-align: center;}
   #footer { border: 1px #dcdcdc solid; background-color:#DCDCDC; font-family: "Arial"; text-align: center;}
   .title { font-size: 11pt; font-family: "Arial"; text-align: center;}
-
-
+  .post_item_nature .posthead2 { background-color:green;}
+  .post_item_news .posthead2 { background-color:red;}
   #main-nav   {
       height: 50px; /* set to the height you want your menu to be */
       margin: 0 0 10px; /* just to give some spacing */
@@ -75,7 +75,7 @@ body {  }
     font-family: "Arial", Times, serif;
 
    }
-   #posthead2{
+   .posthead2{
      height: 100px; /* set to the height you want your menu to be */
      margin: 30px 0px 0px; /* just to give some spacing */
      background-color:#b6b6b6;
@@ -86,7 +86,7 @@ body {  }
      font-family: "Arial", Times, serif;
      border-radius: 30px 30px 0px 0px;
     }
-    #posthead3{
+    .posthead3{
       height: 50px; /* set to the height you want your menu to be */
       margin: 0 0 0px; /* just to give some spacing */
       background-color:#dcdcdc;

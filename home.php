@@ -9,19 +9,29 @@
 
 
       <h1>Latest Posts</h1>
-<?php wp_pagenavi(); ?>
- <div id="posthead">
-    <?php
+      <?php
 
-    if ( have_posts() ) :
-			while ( have_posts() ) : the_post();
-        ?>
+      if ( function_exists( 'wp_pagenavi' ) ) {
+      wp_pagenavi();
+      } else {
+      if ( get_next_posts_link() ) {
+          next_posts_link();
+      }
+
+      if ( get_previous_posts_link() ) {
+          previous_posts_link();
+      }
+      }?>
+
+
+ <div id="posthead">
+
         <div class="post_item">
-            <div id="posthead2">
+            <div class="posthead2">
                 </br>
                 <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
             </div>
-            <div id="posthead3">
+            <div class="posthead3">
                 </br>
                 <a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a>
                 </br>
@@ -29,13 +39,20 @@
             </div>
 
         </div>
-        <?php
-			endwhile;
-    endif;
-    ?>
+
 </div>
 <div id="navigation">
-    <?php wp_pagenavi(); ?>
+    <?php if ( function_exists( 'wp_pagenavi' ) ) {
+    wp_pagenavi();
+} else {
+    if ( get_next_posts_link() ) {
+        next_posts_link();
+    }
+
+    if ( get_previous_posts_link() ) {
+        previous_posts_link();
+    }
+}?>
 
 </div>
 
