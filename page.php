@@ -1,25 +1,12 @@
 
     <?php get_header(); ?>
     <div id="main">
-      
+
       <div id="content">
 
-        <?php
-          wp_nav_menu(array(
-          'theme_location' => 'header_navigation', // menu slug from step 1
-          'container' => false, // ‘div’ container will not be added
-          'menu_class' => 'nav', //
 
-          'fallback_cb' => 'default_header_nav', // name of default function from step 2
-          ));
 
-        ?>
-
-          <div id="main-nav">
-
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-          </div>
+          
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
