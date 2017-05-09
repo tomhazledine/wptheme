@@ -9,27 +9,23 @@
 
 
       <h1>Latest Posts</h1>
-<?php if ( function_exists( 'wp_pagenavi' ) ) {
-    wp_pagenavi();
-} else {
-    echo 'hello!';
-} ?>
+      <?php
+
+      if ( function_exists( 'wp_pagenavi' ) ) {
+      wp_pagenavi();
+      } else {
+      if ( get_next_posts_link() ) {
+          next_posts_link();
+      }
+
+      if ( get_previous_posts_link() ) {
+          previous_posts_link();
+      }
+      }?>
 
 
  <div id="posthead">
-    <?php
 
-    if ( function_exists( 'wp_pagenavi' ) ) {
-    wp_pagenavi();
-} else {
-    if ( get_next_posts_link() ) {
-        next_posts_link();
-    }
-
-    if ( get_previous_posts_link() ) {
-        previous_posts_link();
-    }
-}?>
         <div class="post_item">
             <div class="posthead2">
                 </br>
